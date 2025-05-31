@@ -6,8 +6,8 @@ This project analyzes visual perception using Hidden Markov Models (HMMs) and Ge
 
 ```
 VISUAL-PERCEPTION/
-├── Data/       # All data for visual_perception
-│   ├── 001     # 1st participant data
+    ├── Data/                                       # All data for visual_perception
+    │   ├── 001                                     # 1st participant data
 │   ├── ...
 │
 ├── Full_Data/                                      # Full data ready to be used
@@ -23,13 +23,13 @@ VISUAL-PERCEPTION/
 │   │   │   ├── Full_HMM_5participants.csv          # Final HMM results
 │   │   │   ├── Full_model_outcome_states_1.csv     # BIC + parameters when 1 state
 │   │   │   ├── Full_model_outcome_states_2.csv     # BIC + parameters when 2 states
-│   │   │   ├── one_level_HMM_params.csv            # Parameters for each variable for n_iter iterations
-│   │   │   └── two_state_init_param.csv            # Parameters for each variable + transition probabilities for n_iter iterations
+│   │   │   ├── one_level_HMM_params.csv            # Parameters for each input for n_iter iterations
+│   │   │   └── two_state_init_param.csv            # Parameters for each input + transition probabilities for n_iter iterations
 │   │   ├── 5participants-withbias/                 # Experiment with 5 participants, with bias
 │   │   ├── 6participants/                          # Experiment with 6 participants
 │   │   ├── 6participants-withbias/                 # Experiment with 6 participants, with bias
-│   │   ├── adj-sym/                                # Experiment when adjusting inputs according to symmetry
-│   │   ├── contrast/                               # Experiment with contrast as external variable, by default
+│   │   ├── adj-sym/                                # Experiment when adjusting inputs keeping symmetry
+│   │   ├── contrast/                               # Experiment with contrast as external input, by default
 │   │   ├── normalized/                             # Experiment when normalizing inputs
 │   │   └── withbias/                               # Experiment with bias
 │   └── HMM_visual_perception/                      # Experiments for visual_perception
@@ -59,7 +59,7 @@ VISUAL-PERCEPTION/
 │   ├── simulated_forced_choice1.csv                # Data for simulation1
 │   ├── simulated_forced_choice2.csv                # Data for simulation2
 │   ├── ...
-├── ssm/                                            # ssm package if difficulties in downloading ssm
+├── ssm/                                            # ssm package if difficulties with installing ssm
 │
 ├── GLM_HMM_predictive_templates.ipynb              # Notebook for experiments in predictive_templates
 ├── GLM_HMM_visual_perception.ipynb                 # Notebook for experiments in visual_perception
@@ -75,10 +75,10 @@ These 3 variables are the ones you always need to verify when running an experim
 These following variables need to be verified when running a new experiment:  
 - `bias`, bool: Adds a bias parameter, or not.  
 - `test_type_title`, str: Title of the experiment, used in plots.  
-- `prev_var`, str: Internal variable, related to something happened previously.  
+- `prev_var`, str: Internal variable/input, related to something happened previously.  
 - `prev_var_title`, str: Title for the internal variable.  
-- `ext_var`, str: External variable, related to something happening externally.  
-- `ext_var_title`, str: Title for the external variable.  
+- `ext_var`, str: External variable/input, related to something happening externally.  
+- `ext_var_title`, str: Title for the external variable/input.  
 - (In `## Check that the model is working` section) `n`, int: Number of trials for creating a NOT noisy simulation.  
 - (In `## Check that the model is working` section) `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
 - (In `## Check that the model is working` section) `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
