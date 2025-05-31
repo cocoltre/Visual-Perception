@@ -76,6 +76,13 @@ VISUAL-PERCEPTION/
 - `prev_var_title`, str: Title for the internal variable.  
 - `ext_var`, str: External variable, related to something happening externally.  
 - `ext_var_title`, str: Title for the external variable.  
+- (In `## Check that the model is working` section) `n`, int: Number of trials for creating a NOT noisy simulation.  
+- (In `## Check that the model is working` section) `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
+- (In `## Check that the model is working` section) `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
+- (In `## Load and prepare inputs` section) `n`, int: Number of participants (= 6 by default).  
+- (In `### Verify Congruence` section) `selected_id`, int: Participant Id for plotting (= 1, from 1 to 6 by default).  
+- (In `### Verify Congruence` section) `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default).  
+- (In `### Verify Congruence` section) `window_size`, int: (= 5 by default).  
 
 ## Getting Started
 
