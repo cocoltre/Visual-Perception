@@ -102,7 +102,7 @@ These following variables need to be verified when running a new experiment:
 
 To run an experiment:
 1. Go to the corresponding notebook to generate analysis and figures:  
-- GLM_HMM_predictive_templates  
+- GLM_HMM_predictive_templates, or  
 - GLM_HMM_visual_perception  
 2. In second cell, choose these variables according to your experiment:
 ```
@@ -110,7 +110,7 @@ save_data = True
 test_type = 'normalized-sym'     
 want_another_test = False  
 ```
-3. If new experiment, change the notebook according to it. For example, if your new experiment consists in only reducing data, add the experiment in the `Setup`section, then modify the `## Load and prepare inputs` section.  
+3. If new experiment, change the notebook according to it. For example, if your new experiment consists in only reducing data, add the experiment in the `# Setup` section, then modify the `## Load and prepare inputs` section.  
 4. If already-existing experiment, choose an experiment between:  
 - For predictive_templates:  
     - 5 participants  
