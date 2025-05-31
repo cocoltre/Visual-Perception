@@ -80,9 +80,20 @@ VISUAL-PERCEPTION/
 - (In `## Check that the model is working` section) `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
 - (In `## Check that the model is working` section) `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
 - (In `## Load and prepare inputs` section) `n`, int: Number of participants (= 6 by default).  
-- (In `### Verify Congruence` section) `selected_id`, int: Participant Id for plotting (= 1, from 1 to 6 by default).  
-- (In `### Verify Congruence` section) `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default).  
-- (In `### Verify Congruence` section) `window_size`, int: (= 5 by default).  
+- `selected_id`, int: Participant Id for plotting (= 1, from 1 to 6 by default).  
+- `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default).  
+- `window_size`, int: Window size of mode calculation (= 5 by default).  
+- `obs_dim`, int: Dimension of the output (= 1 by default).  
+- `num_categories`, int: Number of categories for output (= 2 by default).  
+- `input_dim`, int: Dimension of the input (= 2 or 3).  
+-  `N_iters`, int: Number of EM iterations per fit (= 500 by default).  
+- `num_states`, int: Number of predicted states (= 1 or 2).  
+- `n_iter`, int: Number of model restarts (= 100 by default).  
+- `transition_alpha`, int: Hyperparameter to control the probabilities of moving from one hidden state to another (= 1 by default).  
+- `prior_sigma`, float: Standard deviation of Gaussian prior on GLM weights (= 10 by default).  
+- `max_num_states`, int: Maximum number of predicted states (= 2 by default).  
+- `n_perm`, int: Number of permutations (= 100 by default).  
+- `sess_id`, int: Session ID (same as `selected_id` - 1: = 0, from 0 to 5 by default).  
 
 ## Getting Started
 
