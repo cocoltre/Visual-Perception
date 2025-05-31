@@ -98,7 +98,16 @@ These following variables need to be verified when running a new experiment:
 - `n_perm`, int: Number of permutations (= 100 by default).  
 - `sess_id`, int: Session ID (same as `selected_id` - 1: = 0, from 0 to 5 by default).  
 
-## Getting Started
+
+## Installation
+
+To install the required dependencies, make sure you have Python ≥3.8, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running
 
 To run an experiment:
 1. Go to the corresponding notebook to generate analysis and figures:  
