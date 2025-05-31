@@ -6,7 +6,7 @@ This project analyzes visual perception using Hidden Markov Models (HMMs) and Ge
 
 ```
 VISUAL-PERCEPTION/
-├── Data/       # all data for visual_perception
+├── Data/       # All data for visual_perception
 │   ├── 001     # 1st participant data
 │   ├── ...
 │
@@ -67,9 +67,12 @@ VISUAL-PERCEPTION/
 ```
 
 ## Main variables
+These 3 variables are the ones you always need to verify when running an experiment:  
 - `save_data`, bool: Saves data (HMM-related results and plots), or not.  
 - `test_type`, str: Name of the experiment.  
 - `want_another_test`, bool: For predictive_templates: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For visual_perception: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a NOT noisy simulation, or not.  
+
+These following variables need to be added/verified when running a new experiment:  
 - `bias`, bool: Adds a bias parameter, or not.  
 - `test_type_title`, str: Title of the experiment, used in plots.  
 - `prev_var`, str: Internal variable, related to something happened previously.  
@@ -141,7 +144,7 @@ want_another_test = False
     - without60ms  
     - without300ms  
     - withoutbias   
-5. Run the whole notebook
+5. Run the whole notebook.
 
 ## Notes
 
