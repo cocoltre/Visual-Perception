@@ -6,8 +6,8 @@ This project analyzes visual perception using Hidden Markov Models (HMMs) and Ge
 
 ```
 VISUAL-PERCEPTION/
-    ├── Data/                                       # All data for visual_perception
-    │   ├── 001                                     # 1st participant data
+├── Data/                                           # All data for visual_perception
+│   ├── 001                                         # 1st participant data
 │   ├── ...
 │
 ├── Full_Data/                                      # Full data ready to be used
