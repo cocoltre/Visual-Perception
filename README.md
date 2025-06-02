@@ -63,7 +63,8 @@ VISUAL-PERCEPTION/
 │
 ├── GLM_HMM_predictive_templates.ipynb              # Notebook for experiments in predictive_templates
 ├── GLM_HMM_visual_perception.ipynb                 # Notebook for experiments in visual_perception
-└── README.md                                       # This file
+├── README.md                                       # This file
+└── requirements.txt                                # List of required Python packages
 ```
 
 ## Main variables
