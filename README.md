@@ -11,12 +11,12 @@ VISUAL-PERCEPTION/
 │   ├── ...
 │
 ├── Full_Data/                                      # Full data ready to be used
-│   ├── Full_Data_predictive_templates.csv          # Full data for predicive_templates
+│   ├── Full_Data_predictive_templates.csv          # Full data for predictive_templates
 │   ├── Full_Data_visual_perception.csv             # Full data for visual_perception
 │   └── test_model_intervals_64.csv                 # Full data for testing model (in visual_perception)
 │
 ├── HMM/                                            # All HMM-related results
-│   ├── HMM_predictive_templates/                   # Experiments for predicive_templates
+│   ├── HMM_predictive_templates/                   # Experiments for predictive_templates
 │   │   ├── 5participants/                          # Experiment with 5 participants
 │   │   │   ├── BIC_across_models.csv               # BIC when 1 and 2 states
 │   │   │   ├── BIC_permuted_across_models.csv      # BIC with permuted data when 1 and 2 states
@@ -119,13 +119,13 @@ save_data = True
 test_type = 'normalized-sym'     
 want_another_test = False  
 ```
-3. If new experiment, change the notebook according to it. For example, if your new experiment consists in only reducing data, add the experiment in the `# Setup` section, then modify the `## Load and prepare inputs` section.  
-4. If already-existing experiment, choose an experiment between:  
+2.1. If new experiment, change the notebook according to it. For example, if your new experiment consists in only reducing data, add the experiment in the `# Setup` section, then modify the `## Load and prepare inputs` section.  
+2.2. If already-existing experiment, choose an experiment between:  
 - For predictive_templates:  
-    - 5 participants  
-    - 5 participants-withbias  
-    - 6 participants  
-    - 6 participants-withbias  
+    - 5participants  
+    - 5participants-withbias  
+    - 6participants  
+    - 6participants-withbias  
     - adj-sym  
     - contrast  
     - normalized  
@@ -153,7 +153,7 @@ want_another_test = False
     - without60ms  
     - without300ms  
     - withoutbias   
-5. Run the whole notebook.
+3. Run the whole notebook.
 
 ## Notes
 
