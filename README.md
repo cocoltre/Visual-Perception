@@ -76,10 +76,10 @@ These 3 variables are the ones you always need to verify when running an experim
 These following variables need to be verified when running a new experiment. They are all present in visual_perception notebook, only a few are absent from predictive_templates notebook (they are not needed there):  
 - `bias`, bool: Adds a bias parameter, or not.  
 - `test_type_title`, str: Title of the experiment, used in plots.  
-- `prev_var`, str: Internal variable/input, related to something happened previously.  
-- `prev_var_title`, str: Title for the internal variable.  
-- `ext_var`, str: External variable/input, related to something happening externally.  
-- `ext_var_title`, str: Title for the external variable/input.  
+- `prev_var`, str: Internal variable/input.  
+- `prev_var_title`, str: Title for the internal variable, used in plots.  
+- `ext_var`, str: External variable/input.  
+- `ext_var_title`, str: Title for the external variable/input, used in plots.  
 - (In `## Check that the model is working` section) `n`, int: Number of trials for creating a NOT noisy simulation.  
 - (In `## Check that the model is working` section) `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
 - (In `## Check that the model is working` section) `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
