@@ -69,34 +69,44 @@ VISUAL-PERCEPTION/
 
 ## Main variables
 These 3 variables are the ones you always need to verify when running an experiment:  
+Under `# Setup`  
 - `save_data`, bool: Saves data (HMM-related results and plots), or not.  
 - `test_type`, str: Name of the experiment.  
 - `want_another_test`, bool: For predictive_templates: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For visual_perception: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a NOT noisy simulation, or not.  
 
 These following variables need to be verified when running a new experiment. They are all present in visual_perception notebook, only a few are absent from predictive_templates notebook (they are not needed there):  
+Under `# Setup`  
 - `bias`, bool: Adds a bias parameter, or not.  
 - `test_type_title`, str: Title of the experiment, used in plots.  
 - `prev_var`, str: Internal variable/input.  
 - `prev_var_title`, str: Title for the internal variable, used in plots.  
 - `ext_var`, str: External variable/input.  
-- `ext_var_title`, str: Title for the external variable/input, used in plots.  
-- (In `## Check that the model is working` section) `n`, int: Number of trials for creating a NOT noisy simulation.  
-- (In `## Check that the model is working` section) `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
-- (In `## Check that the model is working` section) `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
-- (In `## Load and prepare inputs` section) `n`, int: Number of participants (= 6 by default).  
+- `ext_var_title`, str: Title for the external variable/input, used in plots.
+Under `## Check that the model is working`  
+- `n`, int: Number of trials for creating a NOT noisy simulation.  
+- `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
+- `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.
+Under `## Load and prepare inputs`  
+- `n`, int: Number of participants (= 6 by default).
+Under `## Verify Congruence`  
 - `selected_id`, int: Participant Id for plotting (= 1, from 1 to 6 by default).  
 - `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default).  
-- `window_size`, int: Window size of mode calculation (= 5 by default).  
+- `window_size`, int: Window size of mode calculation (= 5 by default).
+Under `# Initialize GLM-HMM`  
 - `obs_dim`, int: Dimension of the output (= 1 by default).  
 - `num_categories`, int: Number of categories for output (= 2 by default).  
 - `input_dim`, int: Dimension of the input (= 2 or 3).  
--  `N_iters`, int: Number of EM iterations per fit (= 500 by default).  
+-  `N_iters`, int: Number of EM iterations per fit (= 500 by default).
+Under `# Fit at group-level in one-state GLM-HMM`  
 - `num_states`, int: Number of predicted states (= 1 or 2).  
 - `n_iter`, int: Number of model restarts (= 100 by default).  
 - `transition_alpha`, int: Hyperparameter to control the probabilities of moving from one hidden state to another (= 1 by default).  
 - `prior_sigma`, float: Standard deviation of Gaussian prior on GLM weights (= 10 by default).  
+Under `# Fit multi-state GLM-HMMs at group-level and compare BIC`  
 - `max_num_states`, int: Maximum number of predicted states (= 2 by default).  
+Under `# Fit permuted multi-state GLM-HMMs at group-level and compare BIC`  
 - `n_perm`, int: Number of permutations (= 100 by default).  
+Under `## Posterior State Probablities` 
 - `sess_id`, int: Session ID (same as `selected_id` - 1: = 0, from 0 to 5 by default).  
 
 
