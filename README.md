@@ -72,7 +72,7 @@ These 3 variables are the ones you always need to verify when running an experim
 - `test_type`, str: Name of the experiment.  
 - `want_another_test`, bool: For predictive_templates: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For visual_perception: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a NOT noisy simulation, or not.  
 
-These following variables need to be verified when running a new experiment. They are all present visual_perception notebook, only a few are absent from predictive_templates notebook (they are not needed there):  
+These following variables need to be verified when running a new experiment. They are all present in visual_perception notebook, only a few are absent from predictive_templates notebook (they are not needed there):  
 - `bias`, bool: Adds a bias parameter, or not.  
 - `test_type_title`, str: Title of the experiment, used in plots.  
 - `prev_var`, str: Internal variable/input, related to something happened previously.  
