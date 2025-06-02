@@ -117,7 +117,7 @@ Under `# Fit permuted multi-state GLM-HMMs at group-level and compare BIC`
 - `n_perm`, int: Number of permutations (= 100 by default).  
 
 Under `## Posterior State Probablities` 
-- `sess_id`, int: Session ID (same as `selected_id` - 1: = 0, from 0 to 5 by default).  
+- `sess_id`, int: Session ID (same as `selected_id` - 1, = 0, from 0 to 5 by default).  
 
 
 ## Installation
