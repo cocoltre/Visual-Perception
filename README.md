@@ -97,8 +97,8 @@ Under `## Verify Congruence`
 - `selected_id`, int: Participant Id for plotting (= 1, from 1 to 6 by default).  
 - `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default). (*Not in predictive_templates*)  
 - `window_size`, int: Window size of mode calculation (= 5 by default).  
-- `selected_block`, int: First trial to plot when one sample. (*Not in visual_perception*)  
-- `selected_block`, int: Last trial to plot when one sample. (*Not in visual_perception*)  
+- `n_initial`, int: First trial to plot when one sample. (*Not in visual_perception*)  
+- `n_final`, int: Last trial to plot when one sample. (*Not in visual_perception*)  
 
 Under `# Initialize GLM-HMM`  
 - `obs_dim`, int: Dimension of the output (= 1 by default).  
