@@ -73,30 +73,32 @@ These 3 variables are the ones you always need to verify when running an experim
 Under `# Setup`  
 - `save_data`, bool: Saves data (HMM-related results and plots), or not.  
 - `test_type`, str: Name of the experiment.  
-- `want_another_test`, bool: For predictive_templates: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For visual_perception: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a NOT noisy simulation, or not.  
+- `want_another_test`, bool: For *predictive_templates*: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For *visual_perception*: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a NOT noisy simulation, or not.  
 
-These following variables need to be verified when running a new experiment. They are all present in visual_perception notebook, only a few are absent from predictive_templates notebook (they are not needed there):  
+These following variables need to be verified when running a new experiment. All variables except 2 from *predictive_templates* notebook are present in *visual_perception* notebook. A few more are needed in *visual_perception* for more experiments:  
 
 Under `# Setup`  
 - `bias`, bool: Adds a bias parameter, or not.  
 - `test_type_title`, str: Title of the experiment, used in plots.  
-- `prev_var`, str: Internal variable/input.  
-- `prev_var_title`, str: Title for the internal variable, used in plots.  
+- `prev_var`, str: Internal variable/input. (*Not in predictive_templates*)  
+- `prev_var_title`, str: Title for the internal variable, used in plots. (*Not in predictive_templates*)  
 - `ext_var`, str: External variable/input.  
 - `ext_var_title`, str: Title for the external variable/input, used in plots.  
 
-Under `## Check that the model is working`  
+Under `## Check that the model is working` (*Not in predictive_templates*)  
 - `n`, int: Number of trials for creating a NOT noisy simulation.  
 - `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
 - `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
 
 Under `## Load and prepare inputs`  
-- `n`, int: Number of participants (= 6 by default).  
+- `n`, int: Number of participants (= 6 by default). (*Not in predictive_templates*)  
 
 Under `## Verify Congruence`  
 - `selected_id`, int: Participant Id for plotting (= 1, from 1 to 6 by default).  
-- `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default).  
+- `selected_block`, int: Block index for plotting (= 1, from 1 to 10 by default). (*Not in predictive_templates*)  
 - `window_size`, int: Window size of mode calculation (= 5 by default).  
+- `selected_block`, int: First trial to plot when one sample. (*Not in visual_perception*)  
+- `selected_block`, int: Last trial to plot when one sample. (*Not in visual_perception*)  
 
 Under `# Initialize GLM-HMM`  
 - `obs_dim`, int: Dimension of the output (= 1 by default).  
