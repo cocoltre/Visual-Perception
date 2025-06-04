@@ -181,6 +181,6 @@ want_another_test = False
 
 ## Notes
 
-- HMMs are used to identify latent states in participants' visual responses.
-- GLMs help quantify the relationship between stimuli and participant responses.
+- HMMs are used to identify latent and hidden states in participants' visual responses.
+- GLMs help quantify the relationship between stimuli and participant responses. It's a GLM per hidden state — often a multinomial logistic regression (if C > 2), or regular logistic regression if binary (as it is the case here).
 - Model performance is compared using BIC and permutation testing.
