@@ -87,7 +87,7 @@ Under `# Setup`
 - `ext_var_title`, str: Title for the external variable/input, used in plots.  
 
 Under `## Check that the model is working` (*Not in predictive_templates*)  
-- `n`, int: Number of trials for creating a noiseless simulation.  
+- `n`, int: Number of trials of the new noiseless simulation. 
 - `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
 - `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
 
