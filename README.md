@@ -74,7 +74,7 @@ These 3 variables are the ones you always need to verify when running an experim
 Under `# Setup`  
 - `save_data`, bool: Saves data (HMM-related results and plots), or not.  
 - `test_type`, str: Name of the experiment.  
-- `want_another_test`, bool: For *predictive_templates*: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For *visual_perception*: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a NOT noisy simulation, or not.  
+- `want_another_test`, bool: For *predictive_templates*: Only for test_type = '?participants...'. Redoes a simulation/test that chooses randomly ?participants, or not. For *visual_perception*: Only for test_type = 'test_model'. Redoes a simulation/test that chooses randomly a noiseless simulation, or not.  
 
 These following variables need to be verified when running a new experiment. All variables except 2 from *predictive_templates* notebook are present in *visual_perception* notebook. A few more are needed in *visual_perception* for more experiments:  
 
@@ -87,7 +87,7 @@ Under `# Setup`
 - `ext_var_title`, str: Title for the external variable/input, used in plots.  
 
 Under `## Check that the model is working` (*Not in predictive_templates*)  
-- `n`, int: Number of trials for creating a NOT noisy simulation.  
+- `n`, int: Number of trials for creating a noiseless simulation.  
 - `orientation_perc_external`, float: Probability of simulated responses following orientation in external state.  
 - `orientation_perc_internal`, float: Probability of simulated responses following orientation in internal state.  
 
