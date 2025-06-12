@@ -55,6 +55,7 @@ VISUAL-PERCEPTION/
 │       ├── simulation1/
 │       ├── simulation1-1part/
 │       ├── ...
+│ 
 ├── simulations/                                    # Noisy simulations data
 │   ├── simulated_forced_choice1.csv                # Data for simulation1
 │   ├── simulated_forced_choice2.csv                # Data for simulation2
