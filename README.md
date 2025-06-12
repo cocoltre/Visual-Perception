@@ -59,6 +59,7 @@ VISUAL-PERCEPTION/
 │   ├── simulated_forced_choice1.csv                # Data for simulation1
 │   ├── simulated_forced_choice2.csv                # Data for simulation2
 │   ├── ...
+│ 
 ├── ssm/                                            # ssm package if difficulties with installing ssm package
 │
 ├── GLM_HMM_predictive_templates.ipynb              # Notebook for experiments in predictive_templates
